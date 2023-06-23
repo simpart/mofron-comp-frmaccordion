@@ -197,5 +197,14 @@ module.exports = class extends Accordion {
             throw e;
         }
     }
+
+    baseColor (prm, opt) {
+        try {
+            return this.frame().baseColor(prm, opt);
+	} catch (e) {
+            console.error(e.stack);
+            throw e;
+        }
+    }
 }
 /* end of file */
